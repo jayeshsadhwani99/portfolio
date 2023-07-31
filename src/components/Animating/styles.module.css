@@ -1,0 +1,19 @@
+.main {
+  width: 90%;
+  margin: auto;
+  margin-top: 70px;
+  word-break: break-word;
+}
+
+h2 {
+  margin: 0;
+  font-size: 5rem;
+  letter-spacing: -5px;
+}
+
+.scrambled-text {
+  font-size: 15rem !important;
+  line-height: 0.9;
+  letter-spacing: -10px;
+  text-transform: capitalize;
+}
