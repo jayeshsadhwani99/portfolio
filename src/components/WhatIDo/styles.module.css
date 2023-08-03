@@ -25,6 +25,18 @@
   font-size: 8rem;
   font-weight: bold;
   line-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.optionDescription {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: normal;
+  color: #000;
+  text-align: left;
+  flex: 0.5;
 }
 
 .option::before {
@@ -35,6 +47,7 @@
   height: 0.1px;
   background-color: gray;
   display: block;
+  z-index: 1;
 }
 
 .option::after {
@@ -45,4 +58,31 @@
   height: 0.1px;
   background-color: gray;
   display: block;
+}
+
+.hidden {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  z-index: -1;
+  transform: scaleY(0);
+  transition: transform 0.3s;
+}
+
+.text {
+  flex: 1;
+  transition: all 0.3s;
+}
+
+.text:hover {
+  color: #000;
+}
+
+.text:hover ~ .hidden {
+  transform: scaleY(1);
 }

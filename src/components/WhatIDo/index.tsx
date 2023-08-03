@@ -12,10 +12,34 @@ function WhatIDo({ name }: WhatIdoProps) {
       <div className={styles.less}>
         <div className={styles.heading}>What I do</div>
         <div className={styles.options}>
-          <div className={styles.option}>Front-end</div>
-          <div className={styles.option}>Back-end</div>
-          <div className={styles.option}>Instruct</div>
-          <div className={styles.option}>Design</div>
+          <div className={styles.option}>
+            <div className={styles.text}>Front-end</div>
+            <div className={styles.optionDescription}>
+              basically making figma designs come to life
+            </div>
+            <div className={styles.hidden}></div>
+          </div>
+          <div className={styles.option}>
+            <div className={styles.text}>Back-end</div>
+            <div className={styles.optionDescription}>
+              scalability, databases and APIs
+            </div>
+            <div className={styles.hidden}></div>
+          </div>
+          <div className={styles.option}>
+            <div className={styles.text}>Instruct</div>
+            <div className={styles.optionDescription}>
+              repeat a tuitorial I saw on youtube
+            </div>
+            <div className={styles.hidden}></div>
+          </div>
+          <div className={styles.option}>
+            <div className={styles.text}>Design</div>
+            <div className={styles.optionDescription}>
+              take "inspiration" from design sites
+            </div>
+            <div className={styles.hidden}></div>
+          </div>
         </div>
       </div>
     </section>
