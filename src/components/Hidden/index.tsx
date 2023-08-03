@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { HeightContext } from "../../context/HeightContext";
 import styles from "./styles.module.css";
+import history from "../../utils/history";
 
 function Hidden() {
   const { heights } = useContext(HeightContext)!;
@@ -48,6 +49,29 @@ function Hidden() {
         <div className={styles.content}>
           I'm essentially the tech equivalent of a roomba; bumping into things,
           learning from it, and occasionally picking up crumbs of wisdom.
+        </div>
+      </section>
+
+      <section
+        className={styles.history}
+        style={{ height: `${heights.history}px` }}
+      >
+        <div className={styles.heading}>History</div>
+        <div className={styles.options}>
+          {history.map((e, i) => (
+            <div key={i}>
+              <hr />
+              <div className={`${styles.option} ${styles.text}`}>
+                <div className={styles.year}>{e.year}</div>
+                <div className={styles.col}>
+                  <div className={styles.role}>{e.role}</div>
+                  <div className={styles.company}>{e.company}</div>
+                </div>
+                <div className={styles.hidden}></div>
+              </div>
+              <hr />
+            </div>
+          ))}
         </div>
       </section>
     </div>

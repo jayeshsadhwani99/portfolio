@@ -9,6 +9,7 @@ import WhatIDo from "./components/WhatIDo";
 import { CursorProvider } from "./context/CursorContext";
 import { HeightProvider } from "./context/HeightContext";
 import Experience from "./components/Experience";
+import History from "./components/History";
 
 function App() {
   const lenis = new Lenis();
@@ -28,6 +29,7 @@ function App() {
           <About name="about" />
           <WhatIDo name="what-i-do" />
           <Experience name="experience" />
+          <History name="history" />
           <Hidden />
         </HeightProvider>
       </CursorProvider>

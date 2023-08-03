@@ -1,6 +1,5 @@
 .main {
   margin: 5rem auto;
-  margin-top: 15rem;
 }
 
 .less {
@@ -22,21 +21,12 @@
 
 .option {
   position: relative;
-  font-size: 8rem;
   font-weight: bold;
-  line-height: 100%;
+  line-height: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.optionDescription {
-  font-size: 1rem;
-  line-height: 1rem;
-  font-weight: normal;
-  color: #000;
-  text-align: left;
-  flex: 0.5;
+  padding: 1rem;
 }
 
 .options hr {
@@ -46,6 +36,19 @@
   height: 0;
   border: none;
   border-top: 0.05px solid #333;
+}
+
+.text {
+  flex: 1;
+  transition: all 0.3s;
+}
+
+.text:hover {
+  color: #000;
+}
+
+.text:hover .hidden {
+  transform: scaleY(1);
 }
 
 .hidden {
@@ -62,15 +65,22 @@
   transition: transform 0.3s;
 }
 
-.text {
+.year {
+  flex: 0.2;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.col {
   flex: 1;
-  transition: all 0.3s;
+  justify-self: left;
 }
 
-.text:hover {
-  color: #000;
+.role {
+  font-size: 2rem;
 }
 
-.text:hover ~ .hidden {
-  transform: scaleY(1);
+.company {
+  font-size: 1rem;
+  font-weight: normal;
 }

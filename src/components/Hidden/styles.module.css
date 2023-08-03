@@ -83,7 +83,8 @@
   bottom: 0;
   width: 100%;
   height: 0;
-  border-top: 0.1px solid gray;
+  border: none;
+  border-top: 0.5px solid gray;
 }
 
 .experience {
@@ -91,4 +92,39 @@
   width: 90%;
   margin: auto;
   margin-top: 10rem;
+}
+
+.history {
+  margin: 5rem auto;
+  width: 90%;
+}
+
+.history .option {
+  position: relative;
+  font-weight: bold;
+  line-height: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.year {
+  flex: 0.2;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.col {
+  flex: 1;
+  justify-self: left;
+}
+
+.role {
+  font-size: 2rem;
+}
+
+.company {
+  font-size: 1rem;
+  font-weight: normal;
 }
