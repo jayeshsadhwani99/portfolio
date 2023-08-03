@@ -97,3 +97,10 @@
   background-color: gray;
   display: block;
 }
+
+.experience {
+  min-height: 50vh;
+  width: 90%;
+  margin: auto;
+  margin-top: 10rem;
+}

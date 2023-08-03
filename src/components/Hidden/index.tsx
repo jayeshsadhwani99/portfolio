@@ -34,6 +34,17 @@ function Hidden() {
           <div className={styles.option}>Design</div>
         </div>
       </section>
+
+      <section
+        className={styles.experience}
+        style={{ height: `${heights?.experience}px` }}
+      >
+        <div className={styles.heading}>Honestly?</div>
+        <div className={styles.content}>
+          I'm essentially the tech equivalent of a roomba; bumping into things,
+          learning from it, and occasionally picking up crumbs of wisdom.
+        </div>
+      </section>
     </div>
   );
 }

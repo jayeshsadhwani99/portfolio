@@ -8,6 +8,7 @@ import NavBar from "./components/NavBar";
 import WhatIDo from "./components/WhatIDo";
 import { CursorProvider } from "./context/CursorContext";
 import { HeightProvider } from "./context/HeightContext";
+import Experience from "./components/Experience";
 
 function App() {
   const lenis = new Lenis();
@@ -26,6 +27,7 @@ function App() {
           <Animating name="animating" />
           <About name="about" />
           <WhatIDo name="what-i-do" />
+          <Experience name="experience" />
           <Hidden />
         </HeightProvider>
       </CursorProvider>
