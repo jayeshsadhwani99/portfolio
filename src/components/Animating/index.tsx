@@ -1,20 +1,27 @@
 import { ScrambledAnimation } from "react-scrambled-text";
 import styles from "./styles.module.css";
+import { useMeasureHeight } from "../../hooks/useMeasureHeight";
 
-function Animating() {
+interface AnimatingProps {
+  name: string;
+}
+
+function Animating({ name }: AnimatingProps) {
+  const ref = useMeasureHeight(name);
   const texts = [
     "Full-stack builder",
     "Prompt artisian",
-    "Decent Guitarist",
+    "General Biker",
     "Front-end coder",
+    "Decent Guitarist",
     "MERN Fanatic",
     "Figma developer",
+    "Wix whiz",
     "Bug Slayer",
-    "Tech Adventurer",
   ];
 
   return (
-    <section className={styles.main}>
+    <section ref={ref} className={styles.main}>
       <h2>Jayesh is a...</h2>
       <ScrambledAnimation
         pauseDuration={3000}

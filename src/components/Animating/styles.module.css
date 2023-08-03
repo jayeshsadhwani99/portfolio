@@ -1,8 +1,10 @@
 .main {
   width: 90%;
   margin: auto;
-  margin-top: 70px;
+  margin: 70px auto;
   word-break: break-word;
+  height: 90vh;
+  overflow: hidden;
 }
 
 h2 {

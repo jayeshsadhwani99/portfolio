@@ -1,8 +1,14 @@
+import { useMeasureHeight } from "../../hooks/useMeasureHeight";
 import styles from "./styles.module.css";
 
-function NavBar() {
+interface NavbarProps {
+  name: string;
+}
+
+function NavBar({ name }: NavbarProps) {
+  const ref = useMeasureHeight(name);
   return (
-    <nav>
+    <nav ref={ref}>
       <div className={styles.brand}>Jayesh Sadhwani</div>
       <ul className={styles["nav-items"]}>
         <li className={styles["nav-item"]}>About</li>

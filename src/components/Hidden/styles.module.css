@@ -1,0 +1,50 @@
+.hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  color: black;
+
+  background-color: white;
+  mask: url(/src/assets/test-mask.svg);
+  -webkit-mask: url(/src/assets/test-mask.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: var(--cursor-x) var(--cursor-y);
+  -webkit-mask-position: calc(var(--cursor-x) - var(--cursor-size) / 2)
+    calc(var(--cursor-y) - var(--cursor-size) / 2);
+  mask-size: var(--cursor-size);
+  -webkit-mask-size: var(--cursor-size);
+  pointer-events: none;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+}
+
+.nav {
+  padding: 0;
+  width: 100vw;
+}
+
+.animating {
+  width: 100vw;
+  margin: 70px auto;
+}
+
+.about {
+  width: 90%;
+  margin: 5rem auto;
+}
+
+.content {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: lighter;
+  letter-spacing: -1px;
+}

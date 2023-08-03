@@ -1,0 +1,21 @@
+.main {
+  margin: 5rem auto;
+}
+
+.less {
+  width: 90%;
+  margin: auto;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: lighter;
+  letter-spacing: -1px;
+}
+
+.info {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
