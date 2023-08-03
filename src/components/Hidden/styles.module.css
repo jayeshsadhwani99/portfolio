@@ -33,7 +33,8 @@
 
 .about {
   width: 90%;
-  margin: 5rem auto;
+  height: 50vh;
+  margin: auto;
 }
 
 .content {
@@ -47,4 +48,52 @@
   font-size: 2rem;
   font-weight: lighter;
   letter-spacing: -1px;
+}
+
+.whatIDo {
+  margin: 5rem auto;
+  margin-top: 15rem;
+  width: 90%;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.option {
+  position: relative;
+  font-size: 8rem;
+  font-weight: bold;
+  line-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.optionDescription {
+  font-size: 1rem;
+  font-weight: normal;
+  color: black;
+}
+
+.option::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 0.1px;
+  background-color: gray;
+  display: block;
+}
+
+.option::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0.1px;
+  background-color: gray;
+  display: block;
 }
