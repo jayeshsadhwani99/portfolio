@@ -11,6 +11,7 @@ function Hidden() {
         className={styles.animating}
         style={{ height: `${heights?.animating}px` }}
       ></section>
+
       <section
         className={styles.about}
         style={{ height: `${heights?.about}px` }}
@@ -28,9 +29,13 @@ function Hidden() {
       >
         <div className={styles.heading}>What I do</div>
         <div className={styles.options}>
+          <hr />
           <div className={styles.option}>Front-end</div>
+          <hr />
           <div className={styles.option}>Back-end</div>
+          <hr />
           <div className={styles.option}>Instruct</div>
+          <hr />
           <div className={styles.option}>Design</div>
         </div>
       </section>

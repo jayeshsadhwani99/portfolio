@@ -12,6 +12,7 @@ function WhatIDo({ name }: WhatIdoProps) {
       <div className={styles.less}>
         <div className={styles.heading}>What I do</div>
         <div className={styles.options}>
+          <hr />
           <div className={styles.option}>
             <div className={styles.text}>Front-end</div>
             <div className={styles.optionDescription}>
@@ -19,6 +20,7 @@ function WhatIDo({ name }: WhatIdoProps) {
             </div>
             <div className={styles.hidden}></div>
           </div>
+          <hr />
           <div className={styles.option}>
             <div className={styles.text}>Back-end</div>
             <div className={styles.optionDescription}>
@@ -26,6 +28,7 @@ function WhatIDo({ name }: WhatIdoProps) {
             </div>
             <div className={styles.hidden}></div>
           </div>
+          <hr />
           <div className={styles.option}>
             <div className={styles.text}>Instruct</div>
             <div className={styles.optionDescription}>
@@ -33,6 +36,7 @@ function WhatIDo({ name }: WhatIdoProps) {
             </div>
             <div className={styles.hidden}></div>
           </div>
+          <hr />
           <div className={styles.option}>
             <div className={styles.text}>Design</div>
             <div className={styles.optionDescription}>
@@ -40,6 +44,7 @@ function WhatIDo({ name }: WhatIdoProps) {
             </div>
             <div className={styles.hidden}></div>
           </div>
+          <hr />
         </div>
       </div>
     </section>
