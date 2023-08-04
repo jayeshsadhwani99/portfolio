@@ -23,7 +23,7 @@ function About({ name }: AboutProps) {
   };
 
   return (
-    <section ref={ref} className={styles.main}>
+    <section ref={ref} className={styles.main} id={name}>
       <div className={styles.less}>
         <div className={styles.heading}>About me</div>
         <div

@@ -24,6 +24,7 @@ function Contact({ name }: ContactProps) {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       className={`${styles.main} ${hovered ? "hovered" : ""}`}
+      id={name}
     >
       <div className={styles.less}>
         <div className={styles.heading}>My Motto</div>

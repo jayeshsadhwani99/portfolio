@@ -9,7 +9,28 @@ function Hidden() {
   const { heights } = useContext(HeightContext)!;
   return (
     <div className={styles.hidden}>
-      <nav className={styles.nav} style={{ height: `${heights?.nav}px` }}></nav>
+      <nav className={styles.nav}>
+        <div className={styles.brand}>Jayesh Sadhwani</div>
+        <ul className={styles["nav-items"]}>
+          <a href={"#about"}>
+            <li className={styles["nav-item"]}>
+              <span id="about-item">About</span>
+            </li>
+          </a>
+
+          <a href={"#work"}>
+            <li className={styles["nav-item"]}>
+              <span id="work-item">Work</span>
+            </li>
+          </a>
+
+          <a href={"#contact"}>
+            <li className={styles["nav-item"]}>
+              <span id="contact-item">Contact</span>
+            </li>
+          </a>
+        </ul>
+      </nav>
       <section
         className={styles.animating}
         style={{ height: `${heights?.animating}px` }}

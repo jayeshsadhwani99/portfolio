@@ -9,7 +9,7 @@ interface HistoryProps {
 function History({ name }: HistoryProps) {
   const ref = useMeasureHeight(name);
   return (
-    <section ref={ref} className={styles.main}>
+    <section ref={ref} className={styles.main} id="work">
       <div className={styles.less}>
         <div className={styles.heading}>History</div>
         <div className={styles.options}>

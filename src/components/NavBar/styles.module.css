@@ -2,6 +2,7 @@ nav {
   font-size: 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: auto;
   width: 90%;
   padding: 1.5rem 0;
@@ -12,4 +13,15 @@ nav {
   display: flex;
   list-style: none;
   gap: 1rem;
+}
+
+.nav-item {
+  height: 1.8rem;
+  overflow: hidden;
+}
+
+.nav-item span {
+  margin: 0.4rem;
+  display: block;
+  cursor: pointer;
 }
