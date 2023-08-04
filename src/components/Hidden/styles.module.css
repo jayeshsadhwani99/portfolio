@@ -213,3 +213,28 @@
   margin: auto;
   margin-top: 1rem;
 }
+
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
+}
+
+.footerItem {
+  height: 1.8rem;
+  overflow: hidden;
+}
+
+.footerItem span {
+  margin: 0.4rem;
+  display: block;
+  cursor: pointer;
+}
+
+.other {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}

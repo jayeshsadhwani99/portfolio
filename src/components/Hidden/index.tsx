@@ -107,6 +107,31 @@ function Hidden() {
         </div>
         <div className={styles.heading}>Jayesh Sadhwani(or steve jobs)</div>
       </section>
+
+      <footer>
+        <div className={styles.socials}>
+          <div className={styles.footerItem}>
+            <span>Instagram</span>
+          </div>
+
+          <div className={styles.footerItem}>
+            <span>Linkedin</span>
+          </div>
+
+          <div className={styles.footerItem}>
+            <span>Github</span>
+          </div>
+
+          <div className={styles.footerItem}>
+            <span>Twitter</span>
+          </div>
+        </div>
+        <div className={styles.other}>
+          <div>Email me: jayeshsadhwani99@gmail.com</div>
+          <div>Made with &hearts; by Jayesh Sadhwani</div>
+        </div>
+        <div className={styles.info}>Made with &hearts; by Jayesh Sadhwani</div>
+      </footer>
     </div>
   );
 }
