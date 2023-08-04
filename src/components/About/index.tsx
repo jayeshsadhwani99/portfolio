@@ -3,6 +3,7 @@
 import { useCursor } from "../../hooks/useCursor";
 import { useMeasureHeight } from "../../hooks/useMeasureHeight";
 import styles from "./styles.module.css";
+import { useTextAnimate } from "../../hooks/useTextAnimate";
 
 interface AboutProps {
   name: string;
@@ -11,6 +12,7 @@ interface AboutProps {
 function About({ name }: AboutProps) {
   const { hovered, setHovered } = useCursor();
   const ref = useMeasureHeight(name);
+  useTextAnimate(`.${styles.info}`);
 
   const handleMouseEnter = () => {
     setHovered(true);

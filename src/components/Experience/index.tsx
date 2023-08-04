@@ -1,5 +1,6 @@
 import { useCursor } from "../../hooks/useCursor";
 import { useMeasureHeight } from "../../hooks/useMeasureHeight";
+import { useTextAnimate } from "../../hooks/useTextAnimate";
 import styles from "./styles.module.css";
 
 interface ExperienceProps {
@@ -9,6 +10,7 @@ interface ExperienceProps {
 function Experience({ name }: ExperienceProps) {
   const { hovered, setHovered } = useCursor();
   const ref = useMeasureHeight(name);
+  useTextAnimate(`.${styles.info}`);
 
   const handleMouseEnter = () => {
     setHovered(true);

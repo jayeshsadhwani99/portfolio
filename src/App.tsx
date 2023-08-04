@@ -6,9 +6,12 @@ import { HeightProvider } from "./context/HeightContext";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages";
 import Project from "./pages/project";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 function App() {
   const lenis = new Lenis();
+  gsap.registerPlugin(ScrollTrigger);
 
   function raf(time: any) {
     lenis.raf(time);
