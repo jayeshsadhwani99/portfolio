@@ -2,6 +2,8 @@ import { useContext } from "react";
 import { HeightContext } from "../../context/HeightContext";
 import styles from "./styles.module.css";
 import history from "../../utils/history";
+import options from "../../utils/options";
+import projects from "../../utils/projects";
 
 function Hidden() {
   const { heights } = useContext(HeightContext)!;
@@ -30,14 +32,13 @@ function Hidden() {
       >
         <div className={styles.heading}>What I do</div>
         <div className={styles.options}>
-          <hr />
-          <div className={styles.option}>Front-end</div>
-          <hr />
-          <div className={styles.option}>Back-end</div>
-          <hr />
-          <div className={styles.option}>Instruct</div>
-          <hr />
-          <div className={styles.option}>Design</div>
+          {options.map((e, i) => (
+            <div key={i}>
+              <hr />
+              <div className={styles.option}>{e.thing}</div>
+              <hr />
+            </div>
+          ))}
         </div>
       </section>
 
@@ -73,6 +74,38 @@ function Hidden() {
             </div>
           ))}
         </div>
+      </section>
+
+      <section
+        className={styles.projects}
+        style={{ height: `${heights?.projects}px` }}
+      >
+        <div className={styles.heading}>Projects</div>
+        <div className={styles.projectList}>
+          {projects.map((e, i) => (
+            <div
+              className={styles.projectElement}
+              key={i}
+              style={{
+                backgroundImage: `url(${e.img})`,
+              }}
+            >
+              <div className={styles.dark}></div>
+              <div className={styles.name}>{e.name}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section
+        className={styles.contact}
+        style={{ height: `${heights?.contact}px` }}
+      >
+        <div className={styles.heading}>My Motto</div>
+        <div className={styles.content}>
+          The only way to be truly satisfied is to do great work
+        </div>
+        <div className={styles.heading}>Jayesh Sadhwani(or steve jobs)</div>
       </section>
     </div>
   );

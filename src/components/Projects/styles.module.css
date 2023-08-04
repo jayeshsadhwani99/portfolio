@@ -1,0 +1,63 @@
+.main {
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+}
+
+.less {
+  width: 90%;
+  margin: auto;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: lighter;
+  letter-spacing: -1px;
+  margin-bottom: 2rem;
+}
+
+.projectList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.projectElement {
+  position: relative;
+  height: 50vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projectElement .dark {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.projectElement:hover .dark {
+  opacity: 0.7;
+}
+
+.name {
+  font-size: 5rem;
+  font-weight: bold;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.2s;
+  text-decoration: none;
+  color: #fff;
+}
+
+.projectElement:hover .name {
+  opacity: 1;
+}

@@ -1,15 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Lenis from "@studio-freight/lenis";
 import "./App.css";
-import About from "./components/About";
-import Animating from "./components/Animating";
-import Hidden from "./components/Hidden";
-import NavBar from "./components/NavBar";
-import WhatIDo from "./components/WhatIDo";
 import { CursorProvider } from "./context/CursorContext";
 import { HeightProvider } from "./context/HeightContext";
-import Experience from "./components/Experience";
-import History from "./components/History";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages";
+import Project from "./pages/project";
 
 function App() {
   const lenis = new Lenis();
@@ -24,13 +20,10 @@ function App() {
     <div>
       <CursorProvider>
         <HeightProvider>
-          <NavBar name="nav" />
-          <Animating name="animating" />
-          <About name="about" />
-          <WhatIDo name="what-i-do" />
-          <Experience name="experience" />
-          <History name="history" />
-          <Hidden />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/:slug" element={<Project />} />
+          </Routes>
         </HeightProvider>
       </CursorProvider>
     </div>

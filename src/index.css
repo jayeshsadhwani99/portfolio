@@ -25,6 +25,11 @@
   --cursor-y: 0px;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 html.lenis {
   height: auto;
 }
