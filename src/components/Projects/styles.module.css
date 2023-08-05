@@ -85,5 +85,10 @@
 
   .name {
     font-size: 3rem;
+    opacity: 1;
+  }
+
+  .projectElement .dark {
+    opacity: 0.5;
   }
 }

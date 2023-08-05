@@ -60,9 +60,20 @@ export const CursorProvider: React.FC<CursorProviderProps> = ({ children }) => {
 
   useEffect(() => {
     if (hovered) {
-      document.documentElement.style.setProperty("--cursor-size", "480px");
+      if (window.innerWidth > 500) {
+        document.documentElement.style.setProperty("--cursor-size", "480px");
+      } else {
+        if (window.innerWidth > 800) {
+          document.documentElement.style.setProperty("--cursor-size", "280px");
+        }
+        document.documentElement.style.setProperty("--cursor-size", "180px");
+      }
     } else {
-      document.documentElement.style.setProperty("--cursor-size", "32px");
+      if (window.innerWidth > 800) {
+        document.documentElement.style.setProperty("--cursor-size", "32px");
+      } else {
+        document.documentElement.style.setProperty("--cursor-size", "5px");
+      }
     }
   }, [hovered]);
 

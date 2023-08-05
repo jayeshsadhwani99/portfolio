@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Hidden from "../components/Hidden";
 import History from "../components/History";
 import NavBar from "../components/NavBar";
+import PressButton from "../components/PressButton";
 import Projects from "../components/Projects";
 import WhatIDo from "../components/WhatIDo";
 
@@ -22,6 +23,7 @@ function Home() {
       <Contact name="contact" />
       <Footer />
       <Hidden />
+      <PressButton />
     </div>
   );
 }

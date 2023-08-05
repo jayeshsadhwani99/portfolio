@@ -10,15 +10,15 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
 function App() {
-  // const lenis = new Lenis();
   gsap.registerPlugin(ScrollTrigger);
+  const lenis = new Lenis();
 
-  // function raf(time: any) {
-  //   lenis.raf(time);
-  //   requestAnimationFrame(raf);
-  // }
+  function raf(time: any) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
 
-  // requestAnimationFrame(raf);
+  requestAnimationFrame(raf);
   return (
     <div>
       <CursorProvider>

@@ -85,7 +85,7 @@ function ProjectPage() {
 
       <div
         className="projectImg"
-        style={{ backgroundImage: `url(${project.img})` }}
+        style={{ backgroundImage: `url(${project.project_image})` }}
       ></div>
 
       <div className="overview">
@@ -93,6 +93,11 @@ function ProjectPage() {
 
         <div className="info">{project.overview}</div>
       </div>
+
+      <div
+        className="projectImg"
+        style={{ backgroundImage: `url(${project.img})` }}
+      ></div>
     </div>
   );
 }
