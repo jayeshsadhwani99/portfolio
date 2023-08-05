@@ -127,10 +127,7 @@ function Hidden() {
         </div>
       </section>
 
-      <section
-        className={styles.contact}
-        style={{ height: `${heights?.contact}px` }}
-      >
+      <section className={styles.contact}>
         <div className={styles.heading}>My Motto</div>
         <div className={styles.content}>
           The only way to be truly satisfied is to do great work
@@ -160,7 +157,6 @@ function Hidden() {
           <div>Email me: jayeshsadhwani99@gmail.com</div>
           <div>Made with &hearts; by Jayesh Sadhwani</div>
         </div>
-        <div className={styles.info}>Made with &hearts; by Jayesh Sadhwani</div>
       </footer>
     </div>
   );

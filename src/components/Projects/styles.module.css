@@ -1,7 +1,7 @@
 .main {
   margin-top: 15rem;
   margin-bottom: 5rem;
-  width: 100%; /* changed from 100vw to 100% */
+  width: 100%;
 }
 
 .less {
@@ -71,7 +71,12 @@
 
 @media (max-width: 800px) {
   .main {
-    margin-top: 10rem;
+    margin-top: 5rem;
+  }
+
+  .heading {
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
 
   .projectList {

@@ -33,3 +33,14 @@ footer {
   gap: 1rem;
   text-align: center;
 }
+
+@media (max-width: 800px) {
+  footer {
+    gap: 2rem;
+  }
+
+  .socials {
+    min-width: 80%;
+    max-width: 100%;
+  }
+}

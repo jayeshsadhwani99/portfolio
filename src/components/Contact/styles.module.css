@@ -29,3 +29,20 @@
   margin: auto;
   margin-top: 1rem;
 }
+
+@media (max-width: 800px) {
+  .main {
+    margin: 5rem auto;
+  }
+
+  .heading {
+    font-size: 0.8rem;
+    margin: 2rem auto;
+  }
+
+  .info {
+    font-size: 2rem;
+    width: 80%;
+    margin-top: 0;
+  }
+}

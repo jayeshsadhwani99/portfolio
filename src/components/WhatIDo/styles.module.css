@@ -74,3 +74,27 @@
 .text:hover ~ .hidden {
   transform: scaleY(1);
 }
+
+@media (max-width: 800px) {
+  .main {
+    margin: 6rem auto;
+  }
+
+  .heading {
+    font-size: 1rem;
+  }
+
+  .option {
+    font-size: 4rem;
+  }
+
+  .optionDescription {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .optionDescription {
+    display: none;
+  }
+}

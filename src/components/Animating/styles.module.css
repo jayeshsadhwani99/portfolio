@@ -19,3 +19,27 @@ h2 {
   letter-spacing: -10px;
   text-transform: capitalize;
 }
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: 2rem;
+    letter-spacing: -2px;
+  }
+
+  .scrambled-text {
+    font-size: 10rem !important;
+    letter-spacing: -8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    margin: 50px auto;
+    height: 50vh;
+  }
+
+  .scrambled-text {
+    font-size: 6rem !important;
+    line-height: 1;
+  }
+}

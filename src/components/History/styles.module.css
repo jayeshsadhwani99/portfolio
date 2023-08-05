@@ -84,3 +84,22 @@
   font-size: 1rem;
   font-weight: normal;
 }
+
+@media (max-width: 800px) {
+  .heading {
+    font-size: 1rem;
+  }
+
+  .year {
+    font-size: 1.2rem;
+  }
+
+  .role {
+    font-size: 1.2rem;
+  }
+
+  .company {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+}

@@ -8,12 +8,12 @@ export function useMeasureHeight(key: string) {
 
   useEffect(() => {
     if (ref.current) {
-      setHeight(key, ref.current.offsetHeight);
+      setHeight(key, ref.current.clientHeight);
     }
 
     const handleResize = () => {
       if (ref.current) {
-        setHeight(key, ref.current.offsetHeight);
+        setHeight(key, ref.current.clientHeight);
       }
     };
 
