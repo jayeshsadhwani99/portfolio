@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useMeasureHeight } from "../../hooks/useMeasureHeight";
 import styles from "./styles.module.css";
@@ -9,6 +10,7 @@ interface NavbarProps {
 
 function NavBar({ name }: NavbarProps) {
   const ref = useMeasureHeight(name);
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
   function onMenuItemMouseEnter(item: string) {
     document.documentElement.style.setProperty("--cursor-size", "0px");
@@ -28,13 +30,27 @@ function NavBar({ name }: NavbarProps) {
     });
   }
 
+  function closeMenu() {
+    setMenuOpen(false);
+  }
+
   return (
     <nav ref={ref}>
       <div className={styles.brand}>
-        <Link to={"/"}>Jayesh Sadhwani</Link>
+        <Link to={"/"} onClick={closeMenu}>
+          Jayesh Sadhwani
+        </Link>
       </div>
-      <ul className={styles["nav-items"]}>
-        <a href={"#about"}>
+      <button
+        className={`${styles.hamburger} ${isMenuOpen ? styles.open : ""}`}
+        onClick={() => setMenuOpen(!isMenuOpen)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul className={`${styles["nav-items"]} ${isMenuOpen ? styles.open : ""}`}>
+        <a href={"#about"} onClick={closeMenu}>
           <li
             className={styles["nav-item"]}
             onMouseEnter={() => {
@@ -48,8 +64,7 @@ function NavBar({ name }: NavbarProps) {
             <span id="about-item">About</span>
           </li>
         </a>
-
-        <a href={"#work"}>
+        <a href={"#work"} onClick={closeMenu}>
           <li
             className={styles["nav-item"]}
             onMouseEnter={() => {
@@ -63,8 +78,7 @@ function NavBar({ name }: NavbarProps) {
             <span id="work-item">Work</span>
           </li>
         </a>
-
-        <a href={"#contact"}>
+        <a href={"#contact"} onClick={closeMenu}>
           <li
             className={styles["nav-item"]}
             onMouseEnter={() => {

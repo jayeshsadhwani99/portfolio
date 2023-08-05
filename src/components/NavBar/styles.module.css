@@ -13,6 +13,25 @@ nav {
   display: flex;
   list-style: none;
   gap: 1rem;
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  z-index: 999;
+}
+
+.nav-items.open {
+  right: 0;
+}
+
+.hamburger.open span {
+  background: black;
 }
 
 .nav-item {
@@ -24,4 +43,60 @@ nav {
   margin: 0.4rem;
   display: block;
   cursor: pointer;
+}
+
+.brand a {
+  color: white;
+}
+
+.nav-items.open a,
+.nav-items.open span {
+  color: black;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 32px;
+  position: relative;
+  z-index: 1000;
+}
+
+.hamburger span {
+  background: #fff;
+  height: 4px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+@media (min-width: 800px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-items {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    background: transparent;
+    color: white;
+  }
 }

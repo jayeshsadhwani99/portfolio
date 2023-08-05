@@ -1,6 +1,7 @@
 .main {
   margin-top: 15rem;
   margin-bottom: 5rem;
+  width: 100%; /* changed from 100vw to 100% */
 }
 
 .less {
@@ -17,12 +18,18 @@
 
 .projectList {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.projectLink {
+  max-width: 100%;
 }
 
 .projectElement {
   position: relative;
   height: 50vh;
+  max-width: 100%;
 
   display: flex;
   align-items: center;
@@ -60,4 +67,18 @@
 
 .projectElement:hover .name {
   opacity: 1;
+}
+
+@media (max-width: 800px) {
+  .main {
+    margin-top: 10rem;
+  }
+
+  .projectList {
+    grid-template-columns: 1fr;
+  }
+
+  .name {
+    font-size: 3rem;
+  }
 }

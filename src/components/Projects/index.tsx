@@ -17,7 +17,7 @@ function Projects({ name }: ProjectsProps) {
       </div>
       <div className={styles.projectList}>
         {projects.map((e, i) => (
-          <Link to={`/${e.slug}`} key={i}>
+          <Link className={styles.projectLink} to={`/${e.slug}`} key={i}>
             <div
               className={styles.projectElement}
               style={{

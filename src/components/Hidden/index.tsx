@@ -11,6 +11,11 @@ function Hidden() {
     <div className={styles.hidden}>
       <nav className={styles.nav}>
         <div className={styles.brand}>Jayesh Sadhwani</div>
+        <button className={styles.hamburger}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <ul className={styles["nav-items"]}>
           <a href={"#about"}>
             <li className={styles["nav-item"]}>
@@ -56,7 +61,11 @@ function Hidden() {
           {options.map((e, i) => (
             <div key={i}>
               <hr />
-              <div className={styles.option}>{e.thing}</div>
+              <div className={styles.option}>
+                <div className={styles.text}>{e.thing}</div>
+                <div className={styles.optionDescription}>{e.descripion}</div>
+                <div className={styles.hidden}></div>
+              </div>
               <hr />
             </div>
           ))}
