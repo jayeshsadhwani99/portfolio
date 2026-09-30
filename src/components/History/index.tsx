@@ -21,6 +21,7 @@ function History({ name }: HistoryProps) {
                 <div className={styles.col}>
                   <div className={styles.role}>{e.role}</div>
                   <div className={styles.company}>{e.company}</div>
+                  <div className={styles.line}>{e.line}</div>
                 </div>
                 <div className={styles.hidden}></div>
               </div>

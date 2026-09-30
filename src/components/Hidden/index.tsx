@@ -78,8 +78,9 @@ function Hidden() {
       >
         <div className={styles.heading}>Honestly?</div>
         <div className={styles.content}>
-          I'm essentially the tech equivalent of a roomba; bumping into things,
-          learning from it, and occasionally picking up crumbs of wisdom.
+          The agents wrote a shocking amount of the 100k lines. I kept the
+          10k-row grid at 60fps and the build under 20ms, which felt like the
+          whole job.
         </div>
       </section>
 
@@ -97,6 +98,7 @@ function Hidden() {
                 <div className={styles.col}>
                   <div className={styles.role}>{e.role}</div>
                   <div className={styles.company}>{e.company}</div>
+                  <div className={styles.line}>{e.line}</div>
                 </div>
                 <div className={styles.hidden}></div>
               </div>

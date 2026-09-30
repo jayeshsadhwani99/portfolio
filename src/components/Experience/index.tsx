@@ -29,9 +29,10 @@ function Experience({ name }: ExperienceProps) {
           onMouseLeave={handleMouseLeave}
           className={`${styles.info} ${hovered ? "hovered" : ""}`}
         >
-          In the vast realm of tech, I've donned diverse hats, ceaselessly
-          learning, evolving, and delivering exceptional work, all fueled by an
-          enduring dedication to enhancing user experiences.
+          VectorShift, two months in. Tables went from first design to
+          production, 10k rows still at 60fps, and 500 open tickets down to
+          zero. Before that, founding frontend at Doctor Droid, where a 6
+          second build was talked down to under 20 milliseconds.
         </div>
       </div>
     </section>

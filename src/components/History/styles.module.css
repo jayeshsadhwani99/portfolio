@@ -85,13 +85,28 @@
   font-weight: normal;
 }
 
+.line {
+  margin-top: 0.65rem;
+  max-width: 46rem;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.45;
+}
+
 @media (max-width: 800px) {
   .heading {
     font-size: 1rem;
   }
 
+  .option {
+    align-items: flex-start;
+  }
+
   .year {
-    font-size: 1.2rem;
+    flex: 0 0 4.5rem;
+    font-size: 1.1rem;
+    padding: 0.15rem 0.5rem 0 0;
+    white-space: nowrap;
   }
 
   .role {
@@ -100,6 +115,11 @@
 
   .company {
     margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .line {
+    margin-top: 0.4rem;
     font-size: 0.8rem;
   }
 }
