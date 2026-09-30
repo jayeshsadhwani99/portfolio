@@ -1,3 +1,8 @@
+export interface ProjectShot {
+  src: string;
+  caption: string;
+}
+
 export interface ProjectType {
   name: string;
   img: string;
@@ -7,9 +12,43 @@ export interface ProjectType {
   technologies: string;
   project_image: string;
   link: string;
+  screenshots?: ProjectShot[];
 }
 
 const projects = [
+  {
+    name: "Commandra",
+    img: "/projects/commandra/hero.png",
+    slug: "commandra",
+    overview:
+      "Blinkit, Instamart, and Zepto each insist on their own login. Commandra signs into all three every night, pulls sales and ads, and has one dashboard waiting by morning. Six pipelines per brand. Manual clicks: zero.\n\nGMV, orders, spend, ROAS, cities, and the SKUs that are actually moving, side by side. Gmail is connected read-only, and only to catch the OTP. Add the portals you sell on. Most brands are live in under 15 minutes.\n\nThe cards drag, resize, and hide. Or skip the clicking and ask Claude. It reads the same numbers over MCP.",
+    project_type: "Product",
+    technologies: "Next.js,TypeScript,Puppeteer,PostgreSQL,Redis,Clerk,Tailwind",
+    project_image: "/projects/commandra/hero.png",
+    link: "https://commandra.app/",
+    screenshots: [
+      {
+        src: "/projects/commandra/platforms.png",
+        caption: "Sales and ads, daily, from all three. Same source the portals use.",
+      },
+      {
+        src: "/projects/commandra/autopilot.png",
+        caption: "Gmail for the OTP, credentials once, then it runs overnight.",
+      },
+      {
+        src: "/projects/commandra/metrics.png",
+        caption: "One view. Three platforms. The spreadsheet can retire.",
+      },
+      {
+        src: "/projects/commandra/layout.png",
+        caption: "Drag what matters. Hide the rest. The layout follows you.",
+      },
+      {
+        src: "/projects/commandra/ask.png",
+        caption: "Ask the GMV in plain English. Claude already has the tools.",
+      },
+    ],
+  },
   {
     name: "Dryly",
     img: "https://images.unsplash.com/photo-1560060141-7b9018741ced?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2341&q=80",

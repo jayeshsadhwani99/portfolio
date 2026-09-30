@@ -83,10 +83,18 @@ function ProjectPage() {
         </div>
       </div>
 
-      <div
-        className="projectImg"
-        style={{ backgroundImage: `url(${project.project_image})` }}
-      ></div>
+      {project.screenshots?.length ? (
+        <img
+          className="leadShot"
+          src={project.project_image}
+          alt={project.name}
+        />
+      ) : (
+        <div
+          className="projectImg"
+          style={{ backgroundImage: `url(${project.project_image})` }}
+        ></div>
+      )}
 
       <div className="overview">
         <div className="overviewHeading">Project Overview</div>
@@ -94,10 +102,21 @@ function ProjectPage() {
         <div className="info">{project.overview}</div>
       </div>
 
-      <div
-        className="projectImg"
-        style={{ backgroundImage: `url(${project.img})` }}
-      ></div>
+      {project.screenshots?.length ? (
+        <div className="gallery">
+          {project.screenshots.map((shot) => (
+            <figure key={shot.src}>
+              <img src={shot.src} alt={shot.caption} />
+              <figcaption>{shot.caption}</figcaption>
+            </figure>
+          ))}
+        </div>
+      ) : (
+        <div
+          className="projectImg"
+          style={{ backgroundImage: `url(${project.img})` }}
+        ></div>
+      )}
     </div>
   );
 }
