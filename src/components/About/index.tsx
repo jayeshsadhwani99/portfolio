@@ -31,9 +31,9 @@ function About({ name }: AboutProps) {
           onMouseLeave={handleMouseLeave}
           className={`${styles.info} ${hovered ? "hovered" : ""}`}
         >
-          As a versatile Full Stack Developer and Product Manager, I blend
-          edtech problem-solving with a passion for crafting high-impact,
-          quality digital experiences.
+          3x YC engineer. I build the product from the first screen: the UI,
+          the auth, the billing, and the parts that still have to be fast
+          when people show up.
         </div>
       </div>
     </section>

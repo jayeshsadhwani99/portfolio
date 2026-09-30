@@ -47,8 +47,7 @@ function Hidden() {
       >
         <div className={styles.heading}>The truth about it</div>
         <div className={styles.content}>
-          I can google and copy + paste most of my code. Also I use ChatGPT a
-          lot.
+          I am danger. I use dangerously skip permissions.
         </div>
       </section>
 
@@ -98,7 +97,7 @@ function Hidden() {
                 <div className={styles.col}>
                   <div className={styles.role}>{e.role}</div>
                   <div className={styles.company}>{e.company}</div>
-                  <div className={styles.line}>{e.line}</div>
+                  {e.line ? <div className={styles.line}>{e.line}</div> : null}
                 </div>
                 <div className={styles.hidden}></div>
               </div>
